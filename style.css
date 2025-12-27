@@ -18,14 +18,14 @@ body {
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
 }
 
 .slider {
     width: 100%;
     max-width: 400px;
-    height: 600px;
+    height: 85vh;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -39,6 +39,7 @@ body {
     height: 100%;
     opacity: 0;
     animation: fade 9s infinite;
+    animation-fill-mode: both;
 }
 
 .slide:nth-child(2) {
@@ -143,7 +144,7 @@ body {
     }
     
     .slider {
-        height: 500px;
+        height: 80vh;
         max-width: 100%;
         border-radius: 15px;
     }
@@ -215,3 +216,4 @@ img {
     -o-user-drag: none;
     user-drag: none;
 }
+
