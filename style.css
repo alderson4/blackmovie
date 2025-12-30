@@ -15,7 +15,7 @@ body {
 .slider {
     width: 100%;
     height: 500px;
-    max-width: 380px;
+    max-width: 360px;
     position: relative;
     overflow: hidden;
     border-radius: 16px;
@@ -36,7 +36,8 @@ body {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: contain;
+    background: #000;
 }
 
 @keyframes fade {
@@ -46,4 +47,5 @@ body {
     40% { opacity: 0;}
     100% {opacity: 0;}
 }
+
 
